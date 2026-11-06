@@ -13,6 +13,8 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Close
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.MaterialTheme
@@ -193,7 +195,7 @@ fun AttachmentChip(att: Att, onRemove: (() -> Unit)? = null) {
             }
             if (onRemove != null) {
                 androidx.compose.material3.IconButton(onRemove, Modifier.size(32.dp)) {
-                    androidx.compose.material3.Icon(androidx.compose.material.icons.Icons.Default.Close, "Retirer", Modifier.size(16.dp))
+                    androidx.compose.material3.Icon(Icons.Default.Close, "Retirer", Modifier.size(16.dp))
                 }
             }
         }
